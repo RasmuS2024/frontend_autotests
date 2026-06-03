@@ -1,0 +1,27 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.log
+*.jar
+*.war
+hs_err_pid*
+
+# Allure
+allure-results/
+allure-report/
+
