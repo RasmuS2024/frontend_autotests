@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
@@ -40,17 +41,6 @@ public class BasePage {
     }
 
     /**
-     * Выбирает значение из кастомного выпадающего списка (React/MUI)
-     * Кликает по полю, дожидается появления списка и выбирает нужный
-     */
-    protected void select(By locator, String value) {
-        $(locator).shouldBe(visible).click();
-        SelenideElement list = $("[role='listbox']");
-        SelenideElement option = list.$x(String.format("./li[@data-value='%s']", value));
-        option.shouldBe(visible).click();
-    }
-
-    /**
      * Проверяет видимый текст
      */
     protected void shouldHaveText(By locator, String text) {
@@ -63,6 +53,13 @@ public class BasePage {
      */
     protected void shouldHaveTextByAttributeValue(By locator, String text) {
         $(locator).shouldHave(attribute("value", text), Duration.ZERO);
+    }
+
+    /**
+     * Открывает страницу по URL
+     */
+    protected void open(String url) {
+        Selenide.open(url);
     }
 
 }

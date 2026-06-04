@@ -16,4 +16,10 @@ public interface Page {
 
     /** Выбирает значение из выпадающего списка */
     void selectDropdown(String fieldName, String value);
+
+    /** Переключает контекст во фрейм */
+    void switchToFrame(String frameName);
+
+    /** Возвращает контекст на основной контент */
+    void switchToDefaultContent();
 }

@@ -51,7 +51,16 @@ public class SampleAppPage extends BasePage implements Page {
 
     @Override
     public void selectDropdown(String fieldName, String value) {
-        By locator = fields.get(fieldName);
-        select(locator, value);
+
+    }
+
+    @Override
+    public void switchToFrame(String frameName) {
+
+    }
+
+    @Override
+    public void switchToDefaultContent() {
+
     }
 }

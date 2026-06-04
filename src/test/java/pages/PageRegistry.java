@@ -13,14 +13,16 @@ public class PageRegistry {
      * Маршруты
      */
     private static final Map<String, String> routes = Map.of(
-            "SampleAppPage", "http://www.uitestingplayground.com/sampleapp"
+            "SampleAppPage", "http://www.uitestingplayground.com/sampleapp",
+            "FramesPage", "http://www.uitestingplayground.com/frames"
     );
 
     /**
      * Фабрики
      */
     private static final Map<String, Supplier<Page>> pages = Map.of(
-            "SampleAppPage", SampleAppPage::new
+            "SampleAppPage", SampleAppPage::new,
+            "FramesPage", FramesPage::new
     );
 
     /**
