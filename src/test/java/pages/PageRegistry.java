@@ -16,7 +16,8 @@ public class PageRegistry {
             "SampleAppPage", "http://www.uitestingplayground.com/sampleapp",
             "FramesPage", "http://www.uitestingplayground.com/frames",
             "ClickPage", "http://www.uitestingplayground.com/click",
-            "TextInputPage", "http://www.uitestingplayground.com/textinput"
+            "TextInputPage", "http://www.uitestingplayground.com/textinput",
+            "ClassAttrPage", "http://www.uitestingplayground.com/classattr"
     );
 
     /**
@@ -26,7 +27,8 @@ public class PageRegistry {
             "SampleAppPage", SampleAppPage::new,
             "FramesPage", FramesPage::new,
             "ClickPage", ClickPage::new,
-            "TextInputPage", TextInputPage::new
+            "TextInputPage", TextInputPage::new,
+            "ClassAttrPage", ClassAttrPage::new
             );
 
     /**

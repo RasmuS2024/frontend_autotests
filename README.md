@@ -6,7 +6,7 @@
 - Frames (http://www.uitestingplayground.com/frames)  
 - Click (http://www.uitestingplayground.com/click)  
 - Text Input (http://www.uitestingplayground.com/textinput)  
-- 
+- Classattr (http://www.uitestingplayground.com/classattr)  
 
 ### Установка
 
@@ -27,10 +27,17 @@ cd frontend_autotests
 После прогона тестов сформировать и открыть отчёт:
 
 ```bash
-./gradlew allureReport
+./gradlew allureReport --clean
 ./gradlew allureServe
 ```
 
 - `allureReport` - генерирует HTML-отчёт в папку `build/reports/allure-report/` текущего проекта;
 - `allureServe` - запускает локальный веб-сервер и открывает отчёт в браузере.
 
+### Скриншоты Allure
+
+![Allure1](allure_screenshots/1.png)
+рис. 1. Основное окно Allure
+
+![Allure2](allure_screenshots/2.png)
+рис. 2. Запущенные тесты подробнее
