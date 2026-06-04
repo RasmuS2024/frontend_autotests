@@ -5,6 +5,7 @@
 - Sample App (http://www.uitestingplayground.com/sampleapp)  
 - Frames (http://www.uitestingplayground.com/frames)  
 - Click (http://www.uitestingplayground.com/click)  
+- Text Input (http://www.uitestingplayground.com/textinput)  
 - 
 
 ### Установка

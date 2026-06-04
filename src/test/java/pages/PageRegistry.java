@@ -15,7 +15,8 @@ public class PageRegistry {
     private static final Map<String, String> routes = Map.of(
             "SampleAppPage", "http://www.uitestingplayground.com/sampleapp",
             "FramesPage", "http://www.uitestingplayground.com/frames",
-            "ClickPage", "http://www.uitestingplayground.com/click"
+            "ClickPage", "http://www.uitestingplayground.com/click",
+            "TextInputPage", "http://www.uitestingplayground.com/textinput"
     );
 
     /**
@@ -24,8 +25,9 @@ public class PageRegistry {
     private static final Map<String, Supplier<Page>> pages = Map.of(
             "SampleAppPage", SampleAppPage::new,
             "FramesPage", FramesPage::new,
-            "ClickPage", ClickPage::new
-    );
+            "ClickPage", ClickPage::new,
+            "TextInputPage", TextInputPage::new
+            );
 
     /**
      * Загружает страницу по имени
