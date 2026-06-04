@@ -14,7 +14,8 @@ public class PageRegistry {
      */
     private static final Map<String, String> routes = Map.of(
             "SampleAppPage", "http://www.uitestingplayground.com/sampleapp",
-            "FramesPage", "http://www.uitestingplayground.com/frames"
+            "FramesPage", "http://www.uitestingplayground.com/frames",
+            "ClickPage", "http://www.uitestingplayground.com/click"
     );
 
     /**
@@ -22,7 +23,8 @@ public class PageRegistry {
      */
     private static final Map<String, Supplier<Page>> pages = Map.of(
             "SampleAppPage", SampleAppPage::new,
-            "FramesPage", FramesPage::new
+            "FramesPage", FramesPage::new,
+            "ClickPage", ClickPage::new
     );
 
     /**

@@ -1,10 +1,11 @@
 # Разработка автотестов для фронтенда
 
 ### Тестируемые темы:
-На сайте http://www.uitestingplayground.com/home покрыты тестами 5 сценариев:
-- Sample App  
-- Frames  
-- 3 любые другие темы на выбор (в процессе)  
+Покрыты тестами 5 сценариев с сайта http://www.uitestingplayground.com/home:  
+- Sample App (http://www.uitestingplayground.com/sampleapp)  
+- Frames (http://www.uitestingplayground.com/frames)  
+- Click (http://www.uitestingplayground.com/click)  
+- 
 
 ### Установка
 
