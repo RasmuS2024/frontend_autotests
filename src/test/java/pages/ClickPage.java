@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import java.util.Map;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Condition.attribute;
+import static com.codeborne.selenide.Condition.cssClass;
 import static com.codeborne.selenide.Selenide.actions;
 
 public class ClickPage extends BasePage implements Page {
@@ -21,7 +21,7 @@ public class ClickPage extends BasePage implements Page {
     @Override
     public void checkTextByAttributeValue(String elementName, String expectedClass) {
         By locator = buttons.get(elementName);
-        $(locator).shouldHave(attribute("class", expectedClass));
+        $(locator).shouldHave(cssClass(expectedClass));
     }
 
     @Override public void fillField(String fieldName, String value) { }
